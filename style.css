@@ -1,0 +1,475 @@
+/* ================= GENERAL ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #252238;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #17152b !important;
+    padding: 14px 0;
+
+    /* Makes the navbar clearly separated from the page */
+    box-shadow: 0 3px 15px rgba(23, 21, 43, 0.25);
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    margin-left: 12px;
+    padding: 8px 10px !important;
+
+    border-radius: 6px;
+
+    transition:
+        color 0.3s,
+        background-color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    background-color: #7357d9;
+}
+
+/* Highlight the current/important navigation area */
+.nav-link:focus {
+    color: #ffffff !important;
+}
+
+/* Theme button */
+
+.theme-btn {
+    background: transparent;
+    border: 1px solid #77718e;
+
+    color: #ffffff;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    margin-left: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s,
+        border-color 0.3s;
+}
+
+.theme-btn:hover {
+    background: #7357d9;
+    border-color: #7357d9;
+}
+
+/* Mobile navbar button */
+
+.navbar-toggler {
+    border: 1px solid #77718e;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgba(115, 87, 217, 0.35);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f2ff, #ffffff);
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1 {
+    color: #17152b;
+    font-size: 3.5rem;
+}
+
+.hero-section h3 {
+    color: #7357d9;
+    font-weight: 600;
+}
+
+.hero-section p {
+    color: #5d5a6e;
+    max-width: 650px;
+}
+
+
+/* Buttons */
+
+.btn-primary {
+    background-color: #7357d9;
+    border-color: #7357d9;
+}
+
+.btn-primary:hover {
+    background-color: #5d43bd;
+    border-color: #5d43bd;
+}
+
+.btn-outline-primary {
+    color: #7357d9;
+    border-color: #7357d9;
+}
+
+.btn-outline-primary:hover {
+    background-color: #7357d9;
+    border-color: #7357d9;
+}
+
+
+/* Profile Icon */
+
+.profile-image {
+    width: 230px;
+    height: 230px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 6px solid #7357d9;
+
+    box-shadow: 0 15px 35px rgba(115, 87, 217, 0.25);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ================= SECTION HEADINGS ================= */
+
+.section-title {
+    color: #17152b;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #7357d9;
+    margin: 10px auto 0;
+}
+
+
+/* ================= ABOUT ================= */
+
+#about p {
+    color: #555266;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+
+/* ================= EDUCATION ================= */
+
+#education {
+    background-color: #f7f6fb !important;
+}
+
+#education .card {
+    border: none;
+    border-left: 4px solid #7357d9;
+    border-radius: 8px;
+}
+
+#education .card-title {
+    color: #252238;
+}
+
+#education h6 {
+    color: #7357d9 !important;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skill-card {
+    border: 1px solid #e5e1f0;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(40, 35, 70, 0.10) !important;
+}
+
+.skill-icon {
+    font-size: 2.2rem;
+    color: #7357d9;
+}
+
+.skill-card h4 {
+    color: #252238;
+}
+
+.skill-card p {
+    color: #666276;
+    line-height: 1.7;
+}
+
+
+/* ================= PROJECTS ================= */
+
+#projects {
+    background-color: #f7f6fb !important;
+}
+
+.project-card {
+    border: 1px solid #e5e1f0;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(40, 35, 70, 0.12) !important;
+}
+
+.project-icon {
+    font-size: 2.3rem;
+    color: #7357d9;
+}
+
+.project-card h4 {
+    color: #252238;
+}
+
+.project-card p {
+    color: #666276;
+    line-height: 1.7;
+}
+
+
+/* ================= PROJECT BADGES ================= */
+
+/* Fixes the invisible text problem */
+
+.project-card .badge {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 7px 12px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    color: #ffffff !important;
+}
+
+/* Purple badge */
+
+.project-card .badge.bg-primary {
+    background-color: #7357d9 !important;
+}
+
+/* Dark badge */
+
+.project-card .badge.bg-secondary {
+    background-color: #555266 !important;
+}
+
+
+/* ================= CONTACT ================= */
+
+#contact {
+    background-color: #ffffff;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #353147;
+}
+
+.form-control {
+    border: 1px solid #d9d5e5;
+    border-radius: 7px;
+    padding: 10px 12px;
+}
+
+.form-control:focus {
+    border-color: #7357d9;
+    box-shadow: 0 0 0 0.2rem rgba(115, 87, 217, 0.15);
+}
+
+
+/* ================= SOCIAL LINKS ================= */
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin: 0 5px;
+
+    border-radius: 50%;
+
+    background-color: #7357d9;
+    color: white;
+
+    text-decoration: none;
+
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: #5d43bd;
+    transform: translateY(-3px);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #17152b !important;
+}
+
+footer p {
+    color: #dcd9ea;
+}
+
+
+/* ================= DARK MODE ================= */
+
+body.dark-mode {
+    background-color: #151422;
+    color: #eeeeee;
+}
+
+body.dark-mode .hero-section {
+    background: linear-gradient(135deg, #1d1a31, #151422);
+}
+
+body.dark-mode .hero-section h1,
+body.dark-mode .section-title,
+body.dark-mode .skill-card h4,
+body.dark-mode .project-card h4,
+body.dark-mode #education .card-title {
+    color: #ffffff;
+}
+
+body.dark-mode .hero-section p,
+body.dark-mode #about p,
+body.dark-mode .skill-card p,
+body.dark-mode .project-card p {
+    color: #c5c1d2;
+}
+
+body.dark-mode #education,
+body.dark-mode #projects {
+    background-color: #1b1929 !important;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode #education .card {
+    background-color: #211f31;
+    border-color: #363247;
+}
+
+body.dark-mode #contact {
+    background-color: #151422;
+}
+
+body.dark-mode .form-label {
+    color: #eeeeee;
+}
+
+body.dark-mode .form-control {
+    background-color: #211f31;
+    color: #ffffff;
+    border-color: #3b374d;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #aaa6b8;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        text-align: center;
+        padding: 100px 20px 50px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .hero-section p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-image {
+        width: 170px;
+        height: 170px;
+        
+        margin-top: 40px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    .skill-card,
+    .project-card {
+        margin-bottom: 10px;
+    }
+}
